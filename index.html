@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            ;
+            box-sizing: border-box;
+            font-family: 'Roboto Mono', monospace;
+        }
+
+        .maindiv {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            background: turquoise;
+        }
+
+        .centerdiv {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        h1 {
+            text-transform: capitalize;
+            margin-bottom: 30px;
+            color: brown;
+            text-shadow: 1px 3px 4px green;
+            font-size: 2.1rem;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        textarea {
+            background: #444;
+            box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
+            border-radius: 10px 10px 0 0;
+            border: 20px solid #34495e;
+            height: 170px;
+
+            color: white;
+        }
+
+        .mainbtn {
+            padding: 10px 20px;
+            border-radius: 15px;
+            border: 5px solid teal;
+            background: #ecf0f1;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="maindiv">
+        <div class="centerdiv">
+            <h1>Welcome To Test Your Typing Speed Test</h1>
+            <h2 id="msg"></h2>
+            <br>
+            <textarea id="mywords" cols="100" row="10" placeholder="wrote your words here"></textarea><br>
+            <button id="btn" class="mainbtn">Start</button>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="script.js">
+
+</script>
+<!-- Step to navigate the code.
+1: when user pressed start button then only active the textarea else disabled it and vice-versa.
+2:Every time a new setof lines on top. Whenever a start button is pressed. Not the Done one.
+3: get the time and change the button text to Done
+4: get the end time when user clicked on Done button . find the total time taken.
+5: fine the total words on the setofWords.
+6: find the speed of the user and show it on the top when user clicked on Done.
+7: then call the comparewords fun and find how many of the words are matching and how many not. Display the result on the top with speed. -->
